@@ -4,7 +4,7 @@ document.querySelectorAll('.project-tile.has-video').forEach(tile => {
     if (video){
         video.addEventListener('click', (event) => {
             if (video.paused) {
-                video.muted = false;
+                video.muted = false; // Ensure it starts muted
                 video.play().then(() => {
                     console.log('Video is playing');
                 }).catch(error => {

@@ -47,8 +47,8 @@ body {
 	position: relative;
 	display: flex;
 	flex-direction: column;
-    overflow: hidden;
-    max-height: 100px; /* Initial collapsed height */
+    overflow: visible;
+    max-height: none; /* Initial collapsed height */
     transition: max-height 0.5s ease-in-out;
   }
 
