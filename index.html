@@ -59,53 +59,97 @@
 							</article>
 
 						<!-- Work -->
-							<article id="work">
-								<h2 class="major">Projects</h2>
-								<h4>Cat Feeder</h4>
-								<span class="image main"><img src="images/pic02.jpg" alt="Concept of the Cat Feeder" /></span>
-								<ul>
-									<li>Designed & 3D printed the cat feeder as pictured above.</li>
-									<li>Used OpenCV Python and ImUtils to program a motion capture mechanism based on the camera integrated within the Raspberry Pi set by counting contours.</li>
-									<li>Used Tensorflow to train an AI based on over 10,000 images to distinguish cats within the captured frame once motion is detected, which then controls the DC servo motor that dispenses food.</li>
-									<li>Designed a door mechanism that covers the top of the feeder to allow easy refilling of food.</li>
-									<li>Wrote a clear README document to allow the average person to program and build the catfeeder with adequate supplies.</li>
-								</ul>
-								<h4>Admission Database</h4>
-								<span class="image main"><img src="images/pic04.jpg" alt="Picture of the login page of the database"/></span>
-								<ul>
-									<li>Built a database using PostgreSQL, Python, H5, PHP, and JS to store & access the admissions data of my highschool.</li>
-									<li>Designed an UI, as well as a password system, for users accessing the database. Integrated a identification mechanism within the system to differentiate information displayed and accessible by the user based on the identity of the user.</li>
-									<li>Improved the aesthetics and relevant features to be up to school standard and synchronized with various other systems over the course of a year.</li>
-									<li>The entrance page of the database is publically available at <a href="https://rnsdatabase.github.io">rnsdatabase.github.io</a></li>. The database continues to serve the entire Rothesay Netherwood School.</li>
-								</ul>
-								<h4>Speech Recognition Glasses</h4>
-								<span class="image main"><img src="images/pic05.jpg" alt="Sample POV of a test projection of the LCD unit onto the glasses"/></span>
-								<p>Sample POV of a test projection of the LCD unit onto the glasses.</p>
-								<span class="image main"><img src="images/pic06.jpg" alt="Picture of my friend wearing the glasses"/></span>
-								<p>My friend wearing the glasses.</p>
-								<ul>
-									<li>Developed a Python and Arduino-based program based on the Google Speech Module that recognizes English speech and outputs it onto a LCD unit, which projects the display onto an anti-glare visor, as above, achieving an AR-like effect.</li>
-									<li>Improved the design of the 3D-printed glasses framework with the help of a friend to incorporate the electronic parts.</li>
-									<li>Tested the product on patients with dysgraphia, who previously struggled to put words onto a page, and received positive feedback.</li>
-								</ul>
-								<h4>The Red Sun</h4>
-								<span class="image main"><img src="images/pic07.jpg" alt="Menu of the game"/></span>
-								<span class="image main"><img src="images/pic08.jpg" alt="Gameplay screenshot 1"/></span>
-								<p>A 2D game I developed individually in Python's library PyGame, in which the player must defeat the enemies and stop the sun from setting by using their power to turn back time.</p>
-								<ul>
-									<li>Developed frame-checked character physics & movement control, automated enemy movements & attacks, and real-time projectile (dagger) physics.</li>
-									<li>Included a unique method of battle & death penalty mechanism</li>
-									<li>Included a variety of enemy types and increasing difficulty of battle as the player progresses through the game.</li>
-									<li>Developed a rendering algorithm that allows the game's light rendering to change in colour & intensity as the sun sets in the background, which is a key mechanic of this game.</li>
-									<li>Included dynamic background & foreground movement, as well as aesthetically pleasing component physics (such as the train carts).</li>
-									<li>Conceptualized & Wrote a basic plot that adds to the interests of the player in the game.</li>
-									<li>Collaborated with a friend to draw the graphics used in this game.</li>
-									<li>...And many more features.</li>
-								</ul>
-								<p>The game is available in my <a href="https://github.com/plane-paper/The-red-sun">GitHub repository.</a></p>
-								<span class="image main"><img src="images/pic09.jpg" alt="Gameplay screenshot 2"/></span>
-								<span class="image main"><img src="images/pic10.jpg" alt="Gameplay screenshot 3"/></span>
-							</article>
+						<article id="work">
+							<h2 class="major">Projects</h2>
+							<div class="project-tiles">
+								<!-- Cat Feeder Project -->
+								<div class="project-tile">
+									<h4>Cat Feeder</h4>
+									<div class="project-details">
+										<span class="image main"><img src="images/pic02.jpg" alt="Concept of the Cat Feeder" /></span>
+										<ul>
+											<li>Designed & 3D printed the cat feeder as pictured above.</li>
+											<li>Used OpenCV Python and ImUtils to program a motion capture mechanism based on the camera integrated within the Raspberry Pi set by counting contours.</li>
+											<li>Used Tensorflow to train an AI based on over 10,000 images to distinguish cats within the captured frame once motion is detected, which then controls the DC servo motor that dispenses food.</li>
+											<li>Designed a door mechanism that covers the top of the feeder to allow easy refilling of food.</li>
+											<li>Wrote a clear README document to allow the average person to program and build the catfeeder with adequate supplies.</li>
+										</ul>
+									</div>
+								</div>
+			
+								<!-- Admission Database Project -->
+								<div class="project-tile">
+									<h4>Admission Database</h4>
+									<div class="project-details">
+										<span class="image main"><img src="images/pic04.jpg" alt="Picture of the login page of the database"/></span>
+										<ul>
+											<li>Built a database using PostgreSQL, Python, H5, PHP, and JS to store & access the admissions data of my highschool.</li>
+											<li>Designed an UI, as well as a password system, for users accessing the database. Integrated a identification mechanism within the system to differentiate information displayed and accessible by the user based on the identity of the user.</li>
+											<li>Improved the aesthetics and relevant features to be up to school standard and synchronized with various other systems over the course of a year.</li>
+											<li>The database continues to serve the entire Rothesay Netherwood School.</li>
+										</ul>
+									</div>
+								</div>
+			
+								<!-- Speech Recognition Glasses Project -->
+								<div class="project-tile">
+									<h4>Speech Recognition Glasses</h4>
+									<div class="project-details">
+										<span class="image main"><img src="images/pic05.jpg" alt="Sample POV of a test projection of the LCD unit onto the glasses"/></span>
+										<span class="image main"><img src="images/pic06.jpg" alt="Picture of my friend wearing the glasses"/></span>
+										<ul>
+											<li>Developed a Python and Arduino-based program based on the Google Speech Module that recognizes English speech and outputs it onto a LCD unit, which projects the display onto an anti-glare visor, as above, achieving an AR-like effect.</li>
+											<li>Improved the design of the 3D-printed glasses framework with the help of a friend to incorporate the electronic parts.</li>
+											<li>Tested the product on patients with dysgraphia, who previously struggled to put words onto a page, and received positive feedback.</li>
+										</ul>
+									</div>
+								</div>
+			
+								<!-- The Red Sun Project -->
+								<div class="project-tile">
+									<h4>The Red Sun</h4>
+									<div class="project-details">
+										<span class="image main"><img src="images/pic07.jpg" alt="Menu of the game"/></span>
+										<span class="image main"><img src="images/pic08.jpg" alt="Gameplay screenshot 1"/></span>
+										<p>A 2D game I developed individually in Python's library PyGame, in which the player must defeat the enemies and stop the sun from setting by using their power to turn back time.</p>
+										<ul>
+											<li>Developed frame-checked character physics & movement control, automated enemy movements & attacks, and real-time projectile (dagger) physics.</li>
+											<li>Included a unique method of battle & death penalty mechanism</li>
+											<li>Included a variety of enemy types and increasing difficulty of battle as the player progresses through the game.</li>
+											<li>Developed a rendering algorithm that allows the game's light rendering to change in colour & intensity as the sun sets in the background, which is a key mechanic of this game.</li>
+											<li>Included dynamic background & foreground movement, as well as aesthetically pleasing component physics (such as the train carts).</li>
+											<li>Conceptualized & Wrote a basic plot that adds to the interests of the player in the game.</li>
+											<li>Collaborated with a friend to draw the graphics used in this game.</li>
+											<li>...And many more features.</li>
+										</ul>
+										<p>The game is available in my <a href="https://github.com/plane-paper/The-red-sun">GitHub repository.</a></p>
+										<span class="image main"><img src="images/pic09.jpg" alt="Gameplay screenshot 2"/></span>
+										<span class="image main"><img src="images/pic10.jpg" alt="Gameplay screenshot 3"/></span>
+									</div>
+								</div>
+			
+								<!-- Soil Moisture Sensor Project -->
+								<div class="project-tile has-video">
+									<h4>Soil Moisture Sensor</h4>
+									<div class="project-details">
+										<span class="image main"><img src="images/pic11.jpg" alt="Concept of the Module"/></span>
+										<ul>
+											<li>Completed a thorough engineering design process, including drafting a proposal, assessing need, writing a design document, completing revisions, and performing an implementation demo of the soil humidity sensor module.</li>
+											<li>Constructed a soil humidity module with 2 STM32 microcontrollers that inform the user whether a certain soil humidity is too low.</li>
+											<li>Implemented communication using the UART protocol between the STM 32 to transmit the soil humidity data.</li>
+											<li>Configured pins of the microcontrollers such that without using timer and PWM modules, a buzzer and 2 LEDs could be turned on and off according to the data received.</li>
+											<li>Configured the analogue-to-digital converter in the STM 32 to convert the voltage detected by the capacitance soil moisture sensor to a percentage data, which is compared against a user-set threshold.</li>
+											<li>Implemented, manually, a parity check by adding a parity bit at the end of the message, via the bit manipulation available in C++, without using the embedded parity function by STM.</li>
+											<li>Implemented another fucntion to decode the message and check for data corruption by checking for even parity.</li>
+											<li>Without using IOC (STM32CubeMX) files in the STM32CubeIDE to generate code, manually initialized the microcontroller, UART peripherals, and configured pins using purely C coding and a thorough understanding of how microcontrollers work.</li>
+											<li>Understood the underlying concepts between powering and unpowering pins on microcontrollers, as well as how signal sending and receiving works between embedded electrical components and microcontrollers/computers.</li>
+										</ul>
+										<video class="main" controls><source src="images/performance.mp4" type="video/mp4">Your browser does not support video.</video>
+									</div>
+								</div>
+							</div>
+						</article>
+
 
 						<!-- About -->
 							<article id="about">
@@ -165,6 +209,7 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/typewriter.js"></script>
+			<script src="assets/js/projects.js"></script>
 
 	</body>
 </html>

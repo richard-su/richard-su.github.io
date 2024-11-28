@@ -33,6 +33,84 @@ body {
 	line-height: 1;
 }
 
+#work .project-tiles {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.project-tile {
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 10px;
+	padding: 20px;
+	cursor: pointer;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+    overflow: hidden;
+    max-height: 100px; /* Initial collapsed height */
+    transition: max-height 0.5s ease-in-out;
+  }
+
+  .project-tile.has-video {
+    cursor: pointer;
+}
+
+.project-tile.has-video .project-details {
+    pointer-events: auto;
+}
+  
+  .project-tile h4 {
+    text-align: center;
+	padding: 1rem 0;
+	margin: 0;
+}
+
+  .project-tile .project-details {
+    opacity: 0;
+    max-height: 0;
+    transition: opacity 0.5s ease-in-out, max-height 0.5s ease-in-out;
+    overflow: hidden;
+	position: relative;
+	
+  }
+  
+  .project-tile.expanded {
+	max-height: 20000px;
+	background: rgba(255, 255, 255, 0.2);
+  }
+  
+  .project-tile.expanded .project-details {
+	max-height: 20000px;
+	opacity: 1;
+	margin-top: 20px;
+  }
+  
+  @keyframes expand {
+	0% {
+	  max-height: 80px;
+	}
+	100% {
+	  max-height: none;
+	}
+  }
+  
+  @keyframes fadeIn {
+	0% {
+	  opacity: 0;
+	}
+	100% {
+	  opacity: 1;
+	}
+  }
+  
+  .project-tile img {
+	max-width: 100%;
+	height: auto;
+	margin-top: 15px;
+  }
+  
+
 ol, ul {
 	list-style: none;
 }
@@ -1544,7 +1622,7 @@ input, select, textarea {
 			transition: opacity 0.325s ease-in-out, transform 0.325s ease-in-out;
 			padding: 4.5rem 2.5rem 1.5rem 2.5rem ;
 			position: relative;
-			width: 40rem;
+			width: 70%;
 			max-width: 100%;
 			background-color: rgba(27, 31, 34, 0.85);
 			border-radius: 4px;
