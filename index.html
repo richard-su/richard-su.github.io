@@ -139,10 +139,10 @@
 											<li>Implemented communication using the UART protocol between the STM 32 to transmit the soil humidity data.</li>
 											<li>Configured pins of the microcontrollers such that without using timer and PWM modules, a buzzer and 2 LEDs could be turned on and off according to the data received.</li>
 											<li>Configured the analogue-to-digital converter in the STM 32 to convert the voltage detected by the capacitance soil moisture sensor to a percentage data, which is compared against a user-set threshold.</li>
-											<li>Implemented, manually, a parity check by adding a parity bit at the end of the message, via the bit manipulation available in C++, without using the embedded parity function by STM.</li>
-											<li>Implemented another fucntion to decode the message and check for data corruption by checking for even parity.</li>
-											<li>Without using IOC (STM32CubeMX) files in the STM32CubeIDE to generate code, manually initialized the microcontroller, UART peripherals, and configured pins using purely C coding and a thorough understanding of how microcontrollers work.</li>
-											<li>Understood the underlying concepts between powering and unpowering pins on microcontrollers, as well as how signal sending and receiving works between embedded electrical components and microcontrollers/computers.</li>
+											<li>Implemented, manually, in the sender module, a parity check by adding a parity bit at the end of the message, via the bit manipulation available in C++, without using the embedded parity function by STM.</li>
+											<li>Implemented another function to decode the message and check for data corruption by checking for even parity in the receiver module.</li>
+											<li>Without using IOC (STM32CubeMX) files in the STM32CubeIDE to generate code, manually initialized the microcontroller, UART peripherals, and configured pins by manually purely C coding, only possible through a robust understanding of microcontrollers.</li>
+											<li>Understood the underlying concepts between powering and unpowering pins on microcontrollers, as well as how signal sending and receiving works between embedded electrical components and microcontrollers.</li>
 										</ul>
 										<video class="main" controls><source src="images/performance.mp4" type="video/mp4">Your browser does not support video.</video>
 									</div>
