@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>Richard Su</title>
@@ -62,6 +57,39 @@
 						<article id="work">
 							<h2 class="major">Projects</h2>
 							<div class="project-tiles">
+								<!-- QuickSilver Project -->
+								<div class="project-tile">
+									<h4>QuickSilver</h4>
+									<div class="project-details">
+										<span class="image main"><img src="images/pic12.jpg" alt="Concept of the UI" /></span>
+										<ul>
+											<li>Built a broadcaster that sends the IP address, name, OS, MAC, and broadcast time in JSON format to every machine in the LAN, and a receiver that listens for all broadcasts on the LAN and organizes the information received based on OS types before returning it to the user.</li>
+											<li>Built a file sending and receiving system via a TCP connection that allows the user to freely choose the target device (any broadcasting device in the LAN) and target file on the sender end, and a system to validate the file on the receiver end.</li>
+											<li>Developed an alternative system via Bluetooth to accommodate situations without internet connection that sends and receives files via an RFCOMM port, and retains the same functionalities as the TCP system.</li>
+											<li>Developed several mechanisms to prevent users from misusing the product, including simple malware detection, encryption, etc.</li>
+											<li>Designed & built an UI with Tkinter that allows more user-friendly interactions.</li>
+											<li>Ensured the scalability of the project by maintaining its compatibility and minimizing its dependencies, while also ensuring its decentralized nature, such as that with the broadcaster.</li>
+											<li><a href="https://github.com/plane-paper/Quicksilver">Click me for GitHub link</a></li>
+										</ul>
+									</div>
+								</div>
+
+								<!--KnowledgeHunt Project-->
+								<div class="project-tile">
+									<h4>KnowledgeHunt</h4>
+									<div class="project-details">
+										<span class="image main"><img src="images/pic15.jpg" alt="Concept of the UI" /></span>
+										<ul>
+											<li>Developed a Python-based NLP algorithm that selects relevant PDF pages based on keywords inputted by users, specifically by vectorizing the PDFs and keywords, then computing their cosine similarity</li>
+											<li>Designed a UI with Tkinter that allows users to select the question bank to source the PDFs from, and the topics to focus on, thus creating an automatic question bank build tool for any educational system.</li>
+											<li>Built an alternative seeking algoprithm independent of NLP to ensure that the functionalities could remain if the NLP algorithm fails.</li>
+											<li>Included a status report to ensure that the user is properly informed of the functionality of the application.</li>
+											<li>Created a default question bank for the International Baccalaureate system and donated the resulting curated software to Vision Academy Ltd., a tutoring organization with over 10,000 students.</li>
+											<li><a href="https://github.com/plane-paper/KnowledgeHunt">Click me for GitHub link</a></li>
+										</ul>
+									</div>
+								</div>
+
 								<!-- Cat Feeder Project -->
 								<div class="project-tile">
 									<h4>Cat Feeder</h4>
@@ -73,7 +101,24 @@
 											<li>Used Tensorflow to train an AI based on over 10,000 images to distinguish cats within the captured frame once motion is detected, which then controls the DC servo motor that dispenses food.</li>
 											<li>Designed a door mechanism that covers the top of the feeder to allow easy refilling of food.</li>
 											<li>Wrote a clear README document to allow the average person to program and build the catfeeder with adequate supplies.</li>
+											<li><a href="https://github.com/plane-paper/Catfeeder">Click me for Github link</a></li>
 										</ul>
+									</div>
+								</div>
+
+								<!-- WatIsLife Project -->
+								<div class="project-tile">
+									<h4>WatIsLife</h4>
+									<div class="project-details">
+										<ul>
+											<li>Developed a web API that records the user's speech and uses Google Speech Module to count how many times a certain phrase was said and stores the count in a database.</li>
+											<li>Built a simple React front-end that displays a leaderboard for all users based on the number of times the phrase has been said.</li>
+											<li>Collaborated with a friend to build an OAuth system that allows users to login and logout of accounts freely.</li>
+											<li>Built a Discord bot using the Discord API to achieve the same functionalities, with a few built-in commands to ensure that it is user-friendly.</li>
+											<li><a href="https://github.com/plane-paper/WatIsLife">Click me for API Github link</a></li>
+											<li><a href="https://github.com/plane-paper/WatIsLife-Discord">Click me for Discord Bot GitHub link</a></li>
+										</ul>
+										<span class="image main"><img src="images/pic13.jpg" alt="The Bot in Action" /></span>
 									</div>
 								</div>
 			
@@ -101,6 +146,22 @@
 											<li>Developed a Python and Arduino-based program based on the Google Speech Module that recognizes English speech and outputs it onto a LCD unit, which projects the display onto an anti-glare visor, as above, achieving an AR-like effect.</li>
 											<li>Improved the design of the 3D-printed glasses framework with the help of a friend to incorporate the electronic parts.</li>
 											<li>Tested the product on patients with dysgraphia, who previously struggled to put words onto a page, and received positive feedback.</li>
+											<li><a href="https://github.com/plane-paper/speech-recog">Click me for GitHub link (speech recognition program only)</a></li>
+										</ul>
+									</div>
+								</div>
+
+								<!-- YourSweeper Project -->
+								<div class="project-tile">
+									<h4>YourSweeper</h4>
+									<div class="project-details">
+										<span class="image main"><img src="images/pic14.jpg" alt="Traced contours"/></span>
+										<ul>
+											<li>Built a screen detection algorithm that automatically seeks the Minesweeper window on screen by matching the grayscale screenshot with an existing template using OpenCV, then computing the grids using contour tracing.</li>
+											<li>Developed a solver algorithm that automatically seeks safe squares to be clicked on by listing the status of the grids in a matrix, then analyzing it with NumPy, and finally makes guesses when no square is obviously safe.</li>
+											<li>Automated the solver with PyAutoGUI to automatically click on the most desirable grids.</li>
+											<li>Built a failsafe algorithm to output advanced logging and takes screenshots when failure occurs to simplify the debugging process.</li>
+											<li><a href="https://github.com/plane-paper/YourSweeper">Click me for GitHub link</a></li>
 										</ul>
 									</div>
 								</div>
@@ -121,6 +182,7 @@
 											<li>Conceptualized & Wrote a basic plot that adds to the interests of the player in the game.</li>
 											<li>Collaborated with a friend to draw the graphics used in this game.</li>
 											<li>...And many more features.</li>
+											<li><a href="https://github.com/plane-paper/The-red-sun">Click me for GitHub link</a></li>
 										</ul>
 										<p>The game is available in my <a href="https://github.com/plane-paper/The-red-sun">GitHub repository.</a></p>
 										<span class="image main"><img src="images/pic09.jpg" alt="Gameplay screenshot 2"/></span>
@@ -143,6 +205,7 @@
 											<li>Implemented another function to decode the message and check for data corruption by checking for even parity in the receiver module.</li>
 											<li>Without using IOC (STM32CubeMX) files in the STM32CubeIDE to generate code, manually initialized the microcontroller, UART peripherals, and configured pins by manually purely C coding, only possible through a robust understanding of microcontrollers.</li>
 											<li>Understood the underlying concepts between powering and unpowering pins on microcontrollers, as well as how signal sending and receiving works between embedded electrical components and microcontrollers.</li>
+											<li><a href="https://github.com/lacser/ECE-198-Soil-Humidity-Project">Click me for GitHub link</a></li>
 										</ul>
 										<video class="main" controls><source src="images/performance.mp4" type="video/mp4">Your browser does not support video.</video>
 									</div>
